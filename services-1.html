@@ -6,6 +6,7 @@
 <html class="no-js" lang="en"> <!--<![endif]-->
 
 <!-- services-1.html  29 Nov 2019 03:33:45 GMT -->
+<!-- ff7607 -->
 
 <head>
     <meta charset="utf-8">
@@ -14,6 +15,88 @@
     <meta name="author" content="AlexaTheme">
     <title>Nik Techno Design </title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+
+        .service-card {
+            background: #fef5ed;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(247, 220, 197, 0.741);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(246, 118, 13, 0.12);
+        }
+
+
+        .service-title {
+            font-size: 20px;
+            color: #ff7607;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+
+        .service-desc {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #292929;
+        }
+
+
+        .key-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+
+        ul {
+            padding-left: 18px;
+        }
+
+
+        li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
 
     <link rel="stylesheet" href="css/fontawesome.min.css">
 
@@ -64,7 +147,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about-us.html">About</a></li>
                             <li><a href="services-1.html">Services</a></li>
-                            <li><a href="projects.html">Projects</a></li>
+                            <li><a class="disabled" href="projects.html">Projects</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -72,17 +155,12 @@
             </div>
         </div>
     </header>
-    <section class="page-header padding">
-        <div class="container">
-            <div class="page-content text-center">
-                <h2>Our services</h2>
-                <p>Construction & Building Html Template.</p>
-            </div>
-        </div>
+    <section class="page-header-services">
+        
     </section>
     <section class="service-section bg-grey padding">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12">
                     <div id="service-carousel" class="service-carousel box-shadow owl-carousel">
                         <div class="service-item">
@@ -142,10 +220,85 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div class="container">
+                <div class="services-grid">
+
+
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-title">Structural Design and Engineering Support</div>
+                        <div class="service-desc">
+                            We provide conceptual and detailed structural engineering services fully compliant with
+                            Eurocodes and Dutch national standards. Our expertise includes seismic design, structural
+                            assessment, retrofit strategies and verification of existing structures.
+                        </div>
+                        <div class="key-title">Key Services:</div>
+                        <ul>
+                            <li>Structural analysis & design</li>
+                            <li>Seismic vulnerability assessment</li>
+                            <li>Retrofit strategies for existing buildings</li>
+                            <li>Industrial & infrastructure structures</li>
+                            <li>Design review and verification</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-title">Energy Modeling & Simulation</div>
+                        <div class="service-desc">
+                            Advanced energy simulations to support sustainable and cost-effective design decisions.
+                        </div>
+                        <div class="key-title">Key Services:</div>
+                        <ul>
+                            <li>Energy consumption forecasting</li>
+                            <li>Thermal performance analysis</li>
+                            <li>Renewable & hybrid system evaluation</li>
+                            <li>Lifecycle Assessment (LCA)</li>
+                            <li>Support for BENG & sustainability targets</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-title">Building Information Modeling (BIM)</div>
+                        <div class="service-desc">
+                            BIM as the backbone of coordination, performance and collaboration.
+                        </div>
+                        <div class="key-title">Key Services:</div>
+                        <ul>
+                            <li>BIM coordination & clash detection</li>
+                            <li>Integration of energy & structural data</li>
+                            <li>Design optimization in early stages</li>
+                            <li>Improved communication between stakeholders</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-title">Optimization & Material Efficiency</div>
+                        <div class="service-desc">
+                            We help clients reduce material usage, optimize structural systems, balance cost and
+                            performance, and select sustainable materials without compromising safety or quality.
+                        </div>
+                        <div class="key-title">Key Services:</div>
+                        <ul>
+                            <li>Material efficiency studies</li>
+                            <li>Structural optimization</li>
+                            <li>Cost-performance trade-off analysis</li>
+                            <li>Sustainable material selection</li>
+                        </ul>
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </section>
-    <section class="testimonial-section bg-grey padding">
+    <!-- <section class="testimonial-section bg-grey padding">
         <div class="dots"></div>
         <div class="container">
             <div class="section-heading text-center mb-40 wow fadeInUp" data-wow-delay="100ms">
@@ -209,8 +362,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <div class="sponsor-section">
+    </section> -->
+    <!-- <div class="sponsor-section">
         <div class="container">
             <div id="sponsor-carousel" class="sponsor-carousel owl-carousel">
                 <div class="sponsor-item">
@@ -239,15 +392,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <section class="widget-section padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-6 sm-padding">
                     <div class="widget-content">
                         <!-- <a href="#"><img src="img/logo-dark.png" alt="brand"></a> -->
-                         <h3 style="color: white;">Nik Techno Design</h3>
-                        <p>Independent engineering consultancy providing compliant and efficient structural and energy solutions in the Netherlands and Europe.</p>
+                        <h3 style="color: white;">Nik Techno Design</h3>
+                        <p>Independent engineering consultancy providing compliant and efficient structural and energy
+                            solutions in the Netherlands and Europe.</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-sm-6 sm-padding">
@@ -260,9 +414,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-sm-6 sm-padding">
+                <div class="col-lg-4 col-sm-6 sm-padding">
                     <div class="widget-content">
-                        <h4>Headquaters</h4>
+                        <h4>Address</h4>
                         <p>Voorburg, The Netherlands</p>
                         <a href="mailto:info@niktechnodesign.nl">info@niktechnodesign.nl</a>
                     </div>

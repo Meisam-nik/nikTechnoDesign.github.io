@@ -1690,6 +1690,47 @@ button {
     z-index: -1
 }
 
+.dl-menu a.disabled {
+    pointer-events: none;   /* disables clicking */
+    color: #999;            /* optional: greyed out */
+    cursor: default;        /* normal cursor */
+    text-decoration: none;  /* optional */
+}
+
+.a.disabled:hover {
+    pointer-events: none;   /* disables clicking */
+    color: #999;            /* optional: greyed out */
+    cursor: default;        /* normal cursor */
+    text-decoration: none;  /* optional */
+}
+
+
+
+.page-header-services {
+    background-image: url(../img/services-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1
+}
+
+.page-header-services:before {
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1
+}
+
+
 .page-header:before {
     background-color: rgba(0, 0, 0, .1);
     position: absolute;
